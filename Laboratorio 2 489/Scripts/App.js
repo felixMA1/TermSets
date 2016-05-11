@@ -192,13 +192,13 @@ Contoso.CorporateStructureApp = function () {
 
         //Create a dedicated group for the term set to go in
 
-        corporateGroup = termStore.createGroup("Corporate Structure2", corporateGroupGUID);
+        corporateGroup = termStore.createGroup("Zona geografica", corporateGroupGUID);
 
         context.load(corporateGroup);
 
         //Create the term set itself
 
-        corporateTermSet = corporateGroup.createTermSet("Contoso", corporateTermSetGUID, 1033);
+        corporateTermSet = corporateGroup.createTermSet("Area Sur", corporateTermSetGUID, 1033);
 
         context.load(corporateTermSet);
 
@@ -226,29 +226,29 @@ Contoso.CorporateStructureApp = function () {
 
         $("#status-message").text("Creating terms...");
 
-        var hrTerm = corporateTermSet.createTerm("Human Resources", 1033, hrTermGUID);
+        var hrTerm = corporateTermSet.createTerm("Galicia", 1033, hrTermGUID);
 
         context.load(hrTerm);
 
-        var salesTerm = corporateTermSet.createTerm("Sales", 1033, salesTermGUID);
+        var salesTerm = corporateTermSet.createTerm("Asturias", 1033, salesTermGUID);
 
         context.load(salesTerm);
 
-        var technicalTerm = corporateTermSet.createTerm("Technical", 1033, technicalTermGUID);
+        var technicalTerm = corporateTermSet.createTerm("Pais Vasco", 1033, technicalTermGUID);
 
         context.load(technicalTerm);
 
-        var engineeringTerm = technicalTerm.createTerm("Engineering", 1033, engineeringTermGUID);
+        //var engineeringTerm = technicalTerm.createTerm("Engineering", 1033, engineeringTermGUID);
 
-        context.load(engineeringTerm);
+        //context.load(engineeringTerm);
 
-        var softwareTerm = technicalTerm.createTerm("Software", 1033, softwareTermGUID);
+        //var softwareTerm = technicalTerm.createTerm("Software", 1033, softwareTermGUID);
 
-        context.load(softwareTerm);
+        //context.load(softwareTerm);
 
-        var supportTerm = technicalTerm.createTerm("Support", 1033, supportTermGUID);
+        //var supportTerm = technicalTerm.createTerm("Support", 1033, supportTermGUID);
 
-        context.load(supportTerm);
+        //context.load(supportTerm);
 
         context.executeQueryAsync(function () {
 
