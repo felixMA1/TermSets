@@ -43,74 +43,7 @@ Contoso.CorporateStructureApp = function () {
     var supportTermGUID = createGuid();//"EB67773A-0168-40ED-82C3-48ED2A70AE0E";
 
     var metaDataField;
-
-    //Create XML for the new site columns
-
-    var xmlNoteField = '<Field ' +
-
-    'ID="{B758A862-9114-4B89-B73D-DFA806CB5101}" ' +
-
-    'Name="CorporateUnitTaxHTField1" ' +
-
-    'StaticName="CorporateUnitTaxHTField1" ' +
-
-    'DisplayName="Corporate Unit_0" ' +
-
-    'Type="Note" ' +
-
-    'ShowInViewForms="FALSE" ' +
-
-    'Required="FALSE" ' +
-
-    'Hidden="TRUE" ' +
-
-    'CanToggleHidden="TRUE" ' +
-
-    'RowOrdinal="0"></Field>';
-
-    var xmlMetaDataField = '<Field ' +
-
-    'ID="{ce641499-5955-4858-a4b5-9d994fdcea03}" ' +
-
-    'Name="CorporateUnit" ' +
-
-    'StaticName="CorporateUnit" ' +
-
-    'DisplayName="Corporate Unit" ' +
-
-    'Type="TaxonomyFieldType" ' +
-
-    'ShowField="Term1033" ' +
-
-    'EnforceUniqueValues="FALSE" ' +
-
-    'Group="Custom Columns"> ' +
-
-    ' <Customization> ' +
-
-    ' <ArrayOfProperty> ' +
-
-    ' <Property> ' +
-
-    ' <Name>TextField</Name> ' +
-
-    ' <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" ' +
-
-    ' p4:type="q6:string" ' +
-
-    ' xmlns:p4="http://www.w3.org/2001/XMLSchema-instance"> ' +
-
-    ' {B758A862-9114-4B89-B73D-DFA806CB5101} ' +
-
-    ' </Value> ' +
-
-    ' </Property> ' +
-
-    ' </ArrayOfProperty> ' +
-
-    ' </Customization> ' +
-
-    '</Field>';
+    
 
     //This function loads the default termstore for the site collection
 
@@ -198,7 +131,7 @@ Contoso.CorporateStructureApp = function () {
 
         //Create the term set itself
 
-        corporateTermSet = corporateGroup.createTermSet("Area Sur", corporateTermSetGUID, 1033);
+        corporateTermSet = corporateGroup.createTermSet("Area Norte", corporateTermSetGUID, 1033);
 
         context.load(corporateTermSet);
 

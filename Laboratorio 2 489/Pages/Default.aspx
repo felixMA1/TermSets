@@ -62,8 +62,6 @@ Existing Groups:
 
 </span>
 
-<input type="button" value="Create Corporate Site Columns" onclick="Contoso.CorporateStructureApp.create_columns();" />
-
 </div>
 
 </asp:Content>
